@@ -1,0 +1,26 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	background-color: #ccc;
+}
+
+body > div {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.leaflet-container {
+	margin: auto;
+	width: 1000px;
+	height: 500px;
+}
