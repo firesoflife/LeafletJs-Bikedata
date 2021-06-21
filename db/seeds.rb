@@ -18,7 +18,7 @@ Racer.create (
       "current_location": {"lat": 40.00, "lng": -105.35},
     },
     {
-      "f_name": "Jason",
+      "f_name": "Jason",  
       "l_name": "Finn",
       "city": "Huntington Beach",
       "state": "CA",
