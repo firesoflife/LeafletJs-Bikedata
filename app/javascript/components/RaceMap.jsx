@@ -1,22 +1,20 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-const Map = () => {
-	// const location = position => racer.current_location;
-
-	// console.log(racerPosition.current_location);
-
+const RaceMap = () => {
 	return (
-		<div className='container'>
+		<div>
 			<h1 className='title'>Track Your Favourite Riders</h1>
-			{/* <h2>{racerPosition.current_location}</h2> */}
-
-			<MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+			<MapContainer
+				center={[40.0149856, -105.2705456]}
+				zoom={13}
+				scrollWheelZoom={true}
+			>
 				<TileLayer
 					attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 					url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 				/>
-				<Marker position={[51.505, -0.09]}>
+				<Marker position={[42.983, -81.249]}>
 					<Popup>
 						A pretty CSS3 popup. <br /> Easily customizable.
 					</Popup>
@@ -26,4 +24,4 @@ const Map = () => {
 	);
 };
 
-export default Map;
+export default RaceMap;
